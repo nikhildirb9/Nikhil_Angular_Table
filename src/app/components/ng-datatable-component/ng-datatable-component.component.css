@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: auto
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25em
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5em .75em;
+  margin-left: -1px;
+  line-height: 1.25;
+  color:  #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6
+}
+a {
+  text-decoration: none;
+}
+.active>.page-link{
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
